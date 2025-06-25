@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Instalaciones</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><h1>Instalaciones Deportivas</h1></header>
+  <nav><a href="index.html">⬅ Volver</a></nav>
+  <main>
+    <section>
+      <h2>Crear / Editar Instalación</h2>
+      <form id="formInstalacion">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="tipo" placeholder="Tipo (fútbol, tenis...)" required>
+        <input type="text" id="ubicacion" placeholder="Ubicación" required>
+        <input type="text" id="dimensiones" placeholder="Dimensiones" required>
+        <input type="number" id="capacidad" placeholder="Capacidad" required>
+        <select id="publico">
+          <option value="abierto">Abierto</option>
+          <option value="reserva">Solo con reserva</option>
+        </select>
+        <input type="file" id="foto">
+        <button type="submit">Guardar Instalación</button>
+      </form>
+    </section>
+    <section>
+      <h2>Listado de Instalaciones</h2>
+      <div class="grid" id="listaInstalaciones">
+        <!-- Aquí se mostrarán los elementos -->
+      </div>
+    </section>
+  </main>
+  <script src="script_instalaciones.js"></script>
+</body>
+</html>

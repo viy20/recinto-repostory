@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Usuarios</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><h1>Gestión de Usuarios</h1></header>
+  <nav><a href="index.html">⬅ Volver</a></nav>
+  <main>
+    <form id="formUsuario">
+      <input type="text" id="nombreU" placeholder="Nombre" required>
+      <input type="email" id="emailU" placeholder="Correo" required>
+      <select id="categoriaU">
+        <option value="cliente">Cliente</option>
+        <option value="funcionario">Funcionario</option>
+      </select>
+      <select id="disciplinaU">
+        <option value="novicio">Novicio</option>
+        <option value="avanzado">Avanzado</option>
+        <option value="experto">Experto</option>
+      </select>
+      <button type="submit">Registrar Usuario</button>
+    </form>
+    <h2>Lista de Usuarios</h2>
+    <ul id="listaUsuarios"></ul>
+  </main>
+  <script src="script_usuarios.js"></script>
+</body>
+</html>
